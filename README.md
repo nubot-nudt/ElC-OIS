@@ -43,7 +43,7 @@ The project is tested in Ubuntu 18.04 and Ubuntu 20.04. For installation, run th
 Then, download the close-set panoptic segmentation results of [DS-Net](https://github.com/hongfz16/DS-Net) and [Panoptic-PolarNet](https://github.com/edwardzhou130/Panoptic-PolarNet) in this [link](https://pan.baidu.com/s/1D2d3rO4jOePgKj-LwUMccQ?pwd=ycny), **and unzip it in the root directory of this project.**
 
 ## How to run
-Run the following command in the root directory of
+Run the following command in the root directory:
 ```
 python3 ois_framework.py --dataset_dir /dataset/kitti/dataset/sequences --target_set val --panoptic_segmentation_result DS-net --use_refinement
 ```
