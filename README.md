@@ -40,7 +40,7 @@ The project is tested in Ubuntu 18.04 and Ubuntu 20.04. For installation, run th
 ./installation.sh
 ```
 
-Then, download the close-set panoptic segmentation results of [DS-Net](https://github.com/hongfz16/DS-Net) and [Panoptic-PolarNet](https://github.com/edwardzhou130/Panoptic-PolarNet) in this [link](https://pan.baidu.com/s/1D2d3rO4jOePgKj-LwUMccQ?pwd=ycny), **and unzip it in the root directory of this project.**
+Then, download the close-set panoptic segmentation results of [DS-Net](https://github.com/hongfz16/DS-Net) and [Panoptic-PolarNet](https://github.com/edwardzhou130/Panoptic-PolarNet) in [OneDrive](https://1drv.ms/u/s!Ak0LoGJ7lhUTixWrbGT_3knI1F-T?e=G64YK1) or [Baidu Netdisk](https://pan.baidu.com/s/1D2d3rO4jOePgKj-LwUMccQ?pwd=ycny), **and unzip it in the root directory of this project.**
 
 ## How to run
 Run the following command in the root directory:
