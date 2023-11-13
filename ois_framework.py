@@ -112,14 +112,12 @@ for sequence_No in sequences_list:
         ''' Refinement for raw known instances '''
         if args.use_refinement:
             refinement_starting_time = time.time()
-            print("1")
 
             # Get point clouds and instance IDs of raw known instances
             known_ins_mask = np.logical_and(semantic_labels_inv_arr > 0, semantic_labels_inv_arr < 9)
             known_velodyne_points_filtered = velodyne_points[known_ins_mask]
             known_ins_IDs = instance_ori_IDs[known_ins_mask]
             known_ins_IDs_copy = known_ins_IDs.copy()
-            print("2")
 
             # Construct the KD-tree for point clouds of raw known instances
             pcd = o3d.geometry.PointCloud()
@@ -196,8 +194,8 @@ for sequence_No in sequences_list:
                     refined_ins_indices_arr = np.array(indices_of_refined_ins_ID)
                     refined_labels[refined_ins_indices_arr[0, :]*2048 + refined_ins_indices_arr[1, :]] = refined_ID
 
-                refined_labels[np.where(refined_labels == 0)] = -refined_known_ID_offset
                 known_ins_IDs_copy[points_indices_for_refinement] = refined_labels + refined_known_ID_offset
+                refined_labels[np.where(refined_labels == refined_known_ID_offset)] = 0
 
             # Combine the refinement known instances and unknown instances
             complete_ins_offset = np.amax(instance_ori_IDs)
