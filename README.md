@@ -1,18 +1,18 @@
 # ElC-OIS: Ellipsoidal Clustering for Open-World Instance Segmentation on LiDAR Data
 
-This repository contains the implementation of our paper, which is accepted by 2023 IROS:
+This repository contains the implementation of our paper, which was accepted by IROS2023 :
 
-> **ElC-OIS: Ellipsoidal Clustering for Open-World Instance Segmentation on LiDAR Data** [[pdf](https://arxiv.org/pdf/2303.04351.pdf)]\
+> **ElC-OIS: Ellipsoidal Clustering for Open-World Instance Segmentation on LiDAR Data** [[pdf](https://arxiv.org/pdf/2303.04351.pdf)][[IEEE](https://ieeexplore.ieee.org/document/10342356)]\
 > [Wenbang Deng](https://github.com/dwbzxc),  [Kaihong Huang](https://github.com/mshicom),  Qinghua Yu,  Huimin Lu,  Zhiqiang Zheng,  [Xieyuanli Chen](https://github.com/Chen-Xieyuanli)
 
 If you use our code in your work, please star our repo and cite our paper.
 
 ```
-@article{deng2023arxiv,
+@inproceedings{deng2023iros,
 	title={{ElC-OIS: Ellipsoidal Clustering for Open-World Instance Segmentation on LiDAR Data}},
 	author={Deng, Wenbang and Huang, Kaihong and Yu, Qinghua and Lu, Huimin and Zheng, Zhiqiang and Chen, Xieyuanli},
-	journal={arXiv preprint},
-	volume  = {2303.04351},
+	booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+        pages={7606-7613},
 	year={2023}
 }
 ```
